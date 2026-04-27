@@ -4,16 +4,16 @@
   connection: local
   #vars:
   # persons: "Ramesh, suresh, john, sudheer"
-  tasks: 
-  - name: check undefined variable
-    ansible.builtin.debug:
-       msg: "Hello, {{ person | default ('ramesh') }}"
-  # if you give any person name we can define in varaible it's taken,
-  # otherwise by default its taken "ramesh"
+  # tasks: 
+  # - name: check undefined variable
+  #   ansible.builtin.debug:
+  #      msg: "Hello, {{ person | default ('ramesh') }}"
+  # # if you give any person name we can define in varaible it's taken,
+  # # otherwise by default its taken "ramesh"
 
-  - name: print names
-    ansible.builtin.debug:
-       msg: "Hello {{ persons | split (',') }}"
+  # - name: print names
+  #   ansible.builtin.debug:
+  #      msg: "Hello {{ persons | split (',') }}"
 
     
 - name: convert map into list
