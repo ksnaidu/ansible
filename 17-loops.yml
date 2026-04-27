@@ -1,0 +1,12 @@
+---
+- name: loops
+  hosts: local
+  connection: local
+  tasks:
+  - name: print names
+    ansible.builtin.debug:
+       msg: "hello, {{ item }}" # Item here is reserverd keyword, takesone by one names.
+    loop:
+    - Suresh
+    - ramesh
+    - john
